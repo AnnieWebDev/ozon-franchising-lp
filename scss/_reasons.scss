@@ -1,0 +1,33 @@
+.reasons {
+    &__title {
+
+        text-align: center;
+        padding-bottom: rem_calc(80px);
+    }
+
+    &__container {
+        @include xy-grid;
+    }
+
+    &__card {
+        @include xy-cell(2, $breakpoint: auto);
+
+        border: 1px solid #E9EEF1;
+        box-sizing: border-box;
+        box-shadow: rem_calc(2px 2px 20px) #E9EEF1;
+        border-radius: rem_calc(12px);
+        font-size: rem_calc(18px);
+        letter-spacing: rem_calc(0.4px);
+        color: #33475C;
+        padding: rem_calc(32px 24px);
+
+        &:first-child {
+            @include xy-cell-offset(1, $breakpoint: auto);
+        }
+
+    }
+
+
+
+
+}

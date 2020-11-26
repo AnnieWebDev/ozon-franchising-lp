@@ -70,6 +70,9 @@
 @import 'banner';
 @import '_statistics';
 @import 'why';
+@import 'reasons';
+@import 'support';
+@import 'partners';
 
 html {
     font-size: 1.08696vw;
@@ -100,11 +103,45 @@ html {
 
     &:hover {
         background-color: #0051E4;
+        color:#EFF3F6;
+    }
 
+    &:active{
+        background-color: #0041B8;
+        color:#EFF3F6;
     }
 
     &:visited {
         color: #FFFFFF;
+    }
+
+    &:disabled {
+        background-color: #E9EEF1;
+        color: #99A3AD;
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    &_black{
+        background: #001A34;
+        &:hover{
+          color: #E9EEF1;
+        }
+        &:active{
+            color: #CCD4DB;
+        } 
+    }
+
+    &_white{
+        color: #005BFF;
+        background: #FFFFFF;
+
+        &:hover{
+            color: #0041B8;
+        }
+        &:active{
+            color: #001A34;
+        }
     }
 }
 
@@ -116,6 +153,12 @@ html {
         background-image: url("../img/arrow.svg");
         width: rem_calc(13px);
         height: rem_calc(8px);
+    }
+
+    &_arrow-right{
+        background-image: url("../img/icons/arrowRight.svg");
+        width: rem_calc(72px);
+        height: rem_calc(15px);
     }
 
     &_pig {

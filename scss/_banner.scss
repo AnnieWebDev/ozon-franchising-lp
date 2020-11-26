@@ -7,7 +7,7 @@
 
     &__content {
         @include xy-cell(6, $breakpoint: auto);
-        @include xy-cell-offset(1);
+        @include xy-cell-offset(1, $breakpoint: auto );
         padding-top: rem_calc(165px);
 
 
@@ -16,6 +16,7 @@
     &__title {
         line-height: rem_calc(54px);
         margin-bottom: rem_calc(24px);
+        letter-spacing: rem_calc(0.8px);
     }
 
     &__text {

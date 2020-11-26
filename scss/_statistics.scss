@@ -14,21 +14,20 @@
             @include xy-cell-offset(2);
         }
 
-        &-number {
-            display: inline-block;
-            font-weight: bold;
-            font-size: rem_calc(57px);
-            line-height: rem_calc(68px);
-            letter-spacing: rem_calc(1px);
-            font-family: GT Eesti Pro Display;
-            margin-bottom: rem_calc(12px);
-        }
-
         p {
             margin-bottom: 0;
         }
 
+    }
 
+    &__index-number {
+        display: inline-block;
+        font-weight: bold;
+        font-size: rem_calc(57px);
+        line-height: rem_calc(68px);
+        letter-spacing: rem_calc(1px);
+        font-family: GT Eesti Pro Display;
+        margin-bottom: rem_calc(12px);
     }
 
 

@@ -1,14 +1,16 @@
 .why {
     &__title {
         text-align: center;
-        padding: rem_calc(80px 0);
+        padding: rem_calc(70px 0 80px 0);
+        letter-spacing: rem_calc(0.8px);
+        margin-bottom: 0;
     }
 
 }
 
 .cards {
     @include xy-grid;
-    width: rem_calc(1176px);
+    width: rem_calc(1200px);
     margin: 0 auto;
 
     &__item {
@@ -17,7 +19,7 @@
         box-sizing: border-box;
         box-shadow: rem_calc(2px 2px 20px) #E9EEF1;
         border-radius: rem_calc(12px);
-        padding: rem_calc(32px 24px);
+        padding: rem_calc(32px 24px 40px);
         margin-bottom: rem_calc(41px);
 
 
@@ -28,6 +30,10 @@
             color: #fff;
             text-align: center;
             transition: 0.2s;
+            font-size: rem_calc(22px);
+            line-height: rem_calc(26px);
+            letter-spacing: rem_calc(0.6px);
+            padding-top: rem_calc(173px);
 
             &:hover {
                 background-color: #0051E4;
@@ -39,11 +45,11 @@
 
     }
 
-    &__full-blue-container {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    
+
+    &__title {
+        margin-top: rem_calc(25px);
+        margin-bottom: rem_calc(5px);
     }
 
     &__sub-title {
@@ -52,6 +58,16 @@
         font-weight: 500;
         line-height: rem_calc(26px);
         letter-spacing: rem_calc(0.6px);
+
+
+    }
+
+    &__text {
+        margin-top: rem_calc(36px);
+        font-size: rem_calc(18px);
+        line-height: rem_calc(26px);
+        letter-spacing: rem_calc(0.4px);
+        color: #33475C;
 
     }
 
@@ -62,6 +78,7 @@
         height: rem_calc(72px);
         position: relative;
 
+
     }
 
     &__icon {
@@ -69,5 +86,9 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__item-arrow{
+        margin-top: rem_calc(36px);
     }
 }
