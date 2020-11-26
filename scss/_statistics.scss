@@ -1,4 +1,5 @@
 .statistics {
+    margin: rem_calc(0 11px);
     @include xy-grid;
     background-color: #337CFF;
     font-size: rem_calc(22px);

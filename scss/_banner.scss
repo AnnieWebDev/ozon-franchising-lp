@@ -4,13 +4,12 @@
     min-height: rem_calc(708px);
     background-position: center right;
     background-repeat: no-repeat;
+    margin-right: 11px;
 
     &__content {
         @include xy-cell(6, $breakpoint: auto);
-        @include xy-cell-offset(1, $breakpoint: auto );
+        @include xy-cell-offset(1, $breakpoint: auto);
         padding-top: rem_calc(165px);
-
-
     }
 
     &__title {
@@ -23,7 +22,6 @@
         font-size: rem_calc(24px);
         line-height: rem_calc(32px);
         letter-spacing: rem_calc(0.6px);
-
     }
 
     &__btn {
