@@ -71,22 +71,30 @@
 @import '_statistics';
 @import 'why';
 
+html {
+    font-size: 1.08696vw;
+
+    @include breakpoint(large) {
+        font-size: 16px;
+    }
+}
+
 .main {
-    @include xy-grid-container(100%);
+    @include xy-grid-container();
 }
 
 
 
 .btn {
     background: #005BFF;
-    border-radius: 8px;
+    border-radius: rem_calc(8px);
     text-align: center;
-    letter-spacing: 0.7px;
+    letter-spacing: rem_calc(0.7px);
     color: #FFFFFF;
-    padding: 22px 61px;
-    font-size: 22px;
-    line-height: 20px;
-    max-width: 296px;
+    padding: rem_calc(22px 61px);
+    font-size: rem_calc(22px);
+    line-height: rem_calc(20px);
+    max-width: rem_calc(296px);
     display: inline-block;
     transition: 0.3s;
 
@@ -98,9 +106,6 @@
     &:visited {
         color: #FFFFFF;
     }
-
-
-
 }
 
 .icon {
@@ -109,38 +114,38 @@
 
     &_arrow {
         background-image: url("../img/arrow.svg");
-        width: 13px;
-        height: 8px;
+        width: rem_calc(13px);
+        height: rem_calc(8px);
     }
 
     &_pig {
         background-image: url("../img/icons/pig.svg");
-        width: 32px;
-        height: 32px;
+        width: rem_calc(32px);
+        height: rem_calc(32px);
     }
 
-    &_clock{
+    &_clock {
         background-image: url("../img/icons/clock.svg");
-        width: 32px;
-        height: 32px;
+        width: rem_calc(32px);
+        height: rem_calc(32px);
     }
 
-    &_rub{
+    &_rub {
         background-image: url("../img/icons/rub.svg");
-        width: 32px;
-        height: 32px;
+        width: rem_calc(32px);
+        height: rem_calc(32px);
     }
 
-    &_blank{
+    &_blank {
         background-image: url("../img/icons/blank.svg");
-        width: 32px;
-        height: 32px;
+        width: rem_calc(32px);
+        height: rem_calc(32px);
     }
 
-    &_car{
+    &_car {
         background-image: url("../img/icons/car.svg");
-        width: 32px;
-        height: 32px;
+        width: rem_calc(32px);
+        height: rem_calc(32px);
     }
 
 

@@ -1,32 +1,32 @@
 .banner {
     @include xy-grid;
     background-image: url("../img/banner.jpg");
-    min-height: 708px;
+    min-height: rem_calc(708px);
     background-position: center right;
     background-repeat: no-repeat;
 
     &__content {
-        @include xy-cell(6);
+        @include xy-cell(6, $breakpoint: auto);
         @include xy-cell-offset(1);
-        padding-top: 165px;
+        padding-top: rem_calc(165px);
 
 
     }
 
     &__title {
-        line-height: 54px;
-        margin-bottom: 24px;
+        line-height: rem_calc(54px);
+        margin-bottom: rem_calc(24px);
     }
 
     &__text {
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: 0.6px;
+        font-size: rem_calc(24px);
+        line-height: rem_calc(32px);
+        letter-spacing: rem_calc(0.6px);
 
     }
 
     &__btn {
-        margin-top: 60px;
+        margin-top: rem_calc(60px);
     }
 
 }
