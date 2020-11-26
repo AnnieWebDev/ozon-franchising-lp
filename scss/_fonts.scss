@@ -1,0 +1,53 @@
+$fonts_dir: '../fonts/';
+
+@mixin font($family, $name, $weight:normal, $style:normal) {
+    $font_file_path: $fonts_dir + $family;
+
+    @font-face {
+        font-family: $name;
+        src: url($font_file_path + '.woff') format('woff');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin font-mixin($font_name, $weight:normal, $style:normal) {
+    font-family: "#{$font_name}", 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@include font("GT-Eesti-Pro-Display/Light", "GT Eesti Pro Display", 300);
+@mixin ProDisplayLight() {
+    @include font-mixin("ProDisplayLight", 300);
+}
+
+@include font("GT-Eesti-Pro-Display/Regular", "GT Eesti Pro Display", 400);
+@mixin ProDisplayRegular() {
+    @include font-mixin("ProDisplayRegular", 400);
+}
+
+@include font("GT-Eesti-Pro-Display/Medium", "GT Eesti Pro Display", 500);
+@mixin ProDisplayMedium() {
+    @include font-mixin("ProDisplayMedium", 500);
+}
+
+@include font("GT-Eesti-Pro-Display/Bold", "GT Eesti Pro Display", 700);
+@mixin ProDisplayBold() {
+    @include font-mixin("ProDisplayBold", 700);
+}
+
+@include font("GT-Eesti-Pro-Text/Light", "GT Eesti Pro Text", 300);
+@mixin ProTextLight() {
+    @include font-mixin("ProTextLight", 300);
+}
+
+@include font("GT-Eesti-Pro-Text/Regular", "GT Eesti Pro Text", 400);
+@mixin ProTextRegular() {
+    @include font-mixin("ProTextRegular", 400);
+}
+
+@include font("icomoon/icomoon", "icon", 400);
+@mixin icon() {
+    @include font-mixin("icon", 400);
+}

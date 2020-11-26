@@ -1,0 +1,40 @@
+.statistics {
+    @include xy-grid;
+    background-color: #337CFF;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    padding: 80px 0;
+    
+
+
+
+    &__index {
+        @include xy-cell(2);
+
+        &:first-child {
+            @include xy-cell-offset(2);
+        }
+
+        &-number {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 57px;
+            line-height: 68px;
+            letter-spacing: 1px;
+            font-family: GT Eesti Pro Display;
+            margin-bottom: 12px;
+            
+            
+            
+        }
+        p{
+            margin-bottom: 0;
+        }
+        
+
+    }
+
+
+}

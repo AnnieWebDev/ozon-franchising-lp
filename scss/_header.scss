@@ -1,0 +1,116 @@
+.header {
+
+    box-shadow: 0px 4px 16px rgba(233, 238, 241, 0.6);
+    padding: 16px 0;
+
+    &__wrapper {
+        @include xy-grid-container(100%);
+        @include xy-grid;
+        align-items: center;
+
+    }
+
+    &__logo {
+        @include xy-cell(2);
+
+    }
+
+    &__menu {
+        @include xy-cell(8);
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+
+        }
+
+        &-item {
+            list-style-type: none;
+            position: relative;
+            padding: 10px 0;
+
+            .icon{
+                transform: rotate(0);
+                transition: transform 0.6s;
+            }
+            &:hover .icon{
+              transform: rotate(180deg);  
+            }
+        }
+
+        &-link {
+            color: #001A34;
+         
+        }
+
+
+
+    }
+
+
+
+    &__btn {
+        @include xy-cell(2);
+        text-align: right;
+        
+        &-contacts {
+            align-items: center;
+            padding: 12px 24px;
+            background: #E5F5FF;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                background-color: #ccebff;
+            }
+        }
+      
+
+    }
+
+}
+
+.header-dropdown {
+    display: none;
+    padding: 32px 24px;
+    position: absolute;
+    top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #EFF3F6;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 16px rgba(233, 238, 241, 0.6);
+    border-radius: 12px;
+    margin: 0;
+    list-style-type: none;
+
+    &__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        color: #001A34;
+    }
+
+    &__submenu {
+        padding-top: 16px;
+        margin: 0;
+        list-style-type: none;
+        
+
+        &-item:not(:last-child){
+            margin-bottom: 12px;
+        }
+
+        &-link{
+            letter-spacing: 0.4px;
+            color: #667585;
+        }
+
+    }
+
+
+}
