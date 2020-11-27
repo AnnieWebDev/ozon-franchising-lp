@@ -1,0 +1,27 @@
+.from-you {
+    &__title {
+        text-align: center;
+        padding: rem_calc(70px 0 80px 0);
+        letter-spacing: rem_calc(0.8px);
+        margin-bottom: 0;
+    }
+
+    &__list {
+        margin-top: 25px;
+    }
+
+    &__list-item-long {
+        margin-bottom: 40px;
+    }
+
+    &__text_black {
+        font-family: GT Eesti Pro Display;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.6px;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 27px;
+        margin-bottom: 40px;
+    }
+}

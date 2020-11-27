@@ -1,0 +1,51 @@
+.packages {
+    padding-top: rem_calc(120px);
+
+    &__title {
+        text-align: center;
+        letter-spacing: 0.8px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__tabs-title {
+        a {
+            display: block;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.8px;
+            color: #A6A6A6;
+            font-family: GT Eesti Pro Display;
+            font-weight: 500;
+            outline: none;
+            min-width: 470px;
+            text-align: center;
+            border-bottom: 4px solid#DEE5EA;
+            padding-bottom: 12px;
+
+        }
+
+        &.is-active a {
+            border-bottom: 4px solid #005BFF;
+            color: #001A34;
+        }
+
+    }
+
+    &__tabs-content{
+        width: 1176px;
+        margin: 0 auto;
+        padding-top: 108px;
+    }
+
+    &__tabs-panel{
+        display: none;
+        &.is-active {
+            display: block;
+        }
+    }
+}

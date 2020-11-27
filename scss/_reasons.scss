@@ -2,12 +2,15 @@
     &__title {
 
         text-align: center;
-        padding-bottom: rem_calc(80px);
+        padding-bottom: rem_calc(75px);
+        margin-top: rem_calc(75px);
+        letter-spacing: rem_calc(0.8px);
+        margin-bottom: 0;
     }
 
     &__container {
         @include xy-grid;
-    }
+            }
 
     &__card {
         @include xy-cell(2, $breakpoint: auto);
@@ -20,11 +23,16 @@
         letter-spacing: rem_calc(0.4px);
         color: #33475C;
         padding: rem_calc(32px 24px);
+        
 
         &:first-child {
             @include xy-cell-offset(1, $breakpoint: auto);
         }
 
+    }
+    &__card-text{
+        line-height: 26px;
+        
     }
 
 
