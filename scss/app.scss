@@ -99,12 +99,12 @@ html {
 
     }
 
-    
+
 
     &__title {
         margin-top: rem_calc(25px);
         margin-bottom: rem_calc(5px);
-        
+
     }
 
     &__sub-title {
@@ -143,7 +143,7 @@ html {
         transform: translate(-50%, -50%);
     }
 
-    &__item-arrow{
+    &__item-arrow {
         margin-top: rem_calc(36px);
     }
 }
@@ -301,6 +301,12 @@ html {
         height: rem_calc(30px);
     }
 
+    &_document {
+        background-image: url("../img/icons/document.svg");
+        width: rem_calc(24px);
+        height: rem_calc(24px);
+    }
+
 }
 
 @import 'header';
@@ -312,3 +318,5 @@ html {
 @import 'partners';
 @import 'packages';
 @import 'from-you';
+@import 'help';
+@import 'calc';
