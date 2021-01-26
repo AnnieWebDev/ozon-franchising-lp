@@ -7,21 +7,21 @@
     }
 
     &__list {
-        margin-top: 25px;
+        margin-top: rem_calc(25px);
     }
 
     &__list-item-long {
-        margin-bottom: 40px;
+        margin-bottom: rem_calc(40px);
     }
 
     &__text_black {
         font-family: GT Eesti Pro Display;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: rem_calc(18px);
+        line-height: rem_calc(22px);
         letter-spacing: 0.6px;
         font-style: normal;
         font-weight: 500;
-        margin-top: 27px;
-        margin-bottom: 40px;
+        margin-top: rem_calc(27px);
+        margin-bottom: rem_calc(40px);
     }
 }

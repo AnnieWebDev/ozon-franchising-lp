@@ -1,0 +1,17 @@
+.request {
+    background: #E9EEF1;
+    margin: rem_calc(0 28px);
+    padding: rem_calc(96px 0);
+
+    &__title {
+        margin-bottom: rem_calc(80px);
+        text-align: center;
+    }
+
+    &__form {
+        width: rem_calc(776px);
+        margin: 0 auto;
+    }
+
+
+}

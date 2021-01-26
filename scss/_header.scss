@@ -16,6 +16,8 @@
         img {
             width: rem_calc(113px);
             height: rem_calc(48px);
+
+            @include breakpoint(large) {}
         }
     }
 

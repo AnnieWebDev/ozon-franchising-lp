@@ -7,13 +7,15 @@
         margin-bottom: 0;
     }
 
-    &__container {
-        @include xy-grid;
+    &__slider {
+        width: rem_calc(1176px);
+        margin: 0 auto;
     }
 
-    &__card {
-        @include xy-cell(2, $breakpoint: auto);
+    &__slide {}
 
+    &__card {
+        height: rem_calc(238px);
         border: 1px solid #E9EEF1;
         box-sizing: border-box;
         box-shadow: rem_calc(2px 2px 20px) #E9EEF1;
@@ -23,9 +25,7 @@
         color: #33475C;
         padding: rem_calc(32px 24px);
 
-        &:first-child {
-            @include xy-cell-offset(1, $breakpoint: auto);
-        }
+
 
     }
 
@@ -34,7 +34,7 @@
     }
 
     &__card-text {
-        line-height: 26px;
+        line-height: rem_calc(26px);
 
     }
 

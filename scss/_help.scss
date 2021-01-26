@@ -1,21 +1,23 @@
 .help {
-    width: 1176px;
+
+    width: rem_calc(1176px);
     margin: 0 auto;
+    padding-top: rem_calc(40px);
 
     &__title {
-        font-size: 46px;
-        line-height: 54px;
+        font-size: rem_calc(46px);
+        line-height: rem_calc(54px);
         text-align: center;
         letter-spacing: 0.8px;
     }
 
     &__text {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: rem_calc(24px);
+        line-height: rem_calc(32px);
         text-align: center;
         letter-spacing: 0.6px;
-        margin-bottom: 80px;
-        margin-top: 12px;
+        margin-bottom: rem_calc(80px);
+        margin-top: rem_calc(12px);
     }
 
     &__wrapper {
@@ -26,26 +28,26 @@
 
     &__block {
         &:last-child {
-            padding-right: 90px;
+            padding-right: rem_calc(90px);
         }
 
         &_middle {
-            padding-left: 30px;
+            padding-left: rem_calc(30px);
         }
     }
 
     &__block-text {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: rem_calc(20px);
+        line-height: rem_calc(28px);
         letter-spacing: 1.4px;
-        margin-bottom: 2px;
+        margin-bottom: rem_calc(2px);
     }
 
     &__block-feature {
         font-family: 'GT Eesti Pro Display';
         font-weight: 500;
-        font-size: 46px;
-        line-height: 54px;
+        font-size: rem_calc(46px);
+        line-height: rem_calc(54px);
         display: flex;
         align-items: center;
         letter-spacing: 0.8px;

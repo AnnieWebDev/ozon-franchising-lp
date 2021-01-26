@@ -1,5 +1,7 @@
 .packages {
     padding-top: rem_calc(120px);
+    padding-bottom: rem_calc(80px);
+
 
     &__title {
         text-align: center;
@@ -16,17 +18,17 @@
     &__tabs-title {
         a {
             display: block;
-            font-size: 36px;
-            line-height: 42px;
+            font-size: rem_calc(36px);
+            line-height: rem_calc(42px);
             letter-spacing: 0.8px;
             color: #A6A6A6;
             font-family: GT Eesti Pro Display;
             font-weight: 500;
             outline: none;
-            min-width: 470px;
+            min-width: rem_calc(470px);
             text-align: center;
             border-bottom: 4px solid#DEE5EA;
-            padding-bottom: 12px;
+            padding-bottom: rem_calc(12px);
 
         }
 
@@ -40,7 +42,7 @@
     &__tabs-content {
         width: rem_calc(1200px);
         margin: 0 auto;
-        padding-top: 89px;
+        padding-top: rem_calc(89px);
     }
 
     &__tabs-panel {
@@ -51,6 +53,30 @@
         }
     }
 
+    &__gallery {
+        width: rem_calc(1176px);
+        margin: 0 auto;
+    }
+
+    &__gallery-title {
+        margin-bottom: rem_calc(40px);
+    }
+
+    &__gallery-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__gallery-item {
+        display: block;
+        width: rem_calc(216px);
+        height: rem_calc(164px);
+    }
+
+    &__gallery-image {
+        border-radius: rem_calc(12px);
+    }
+
 }
 
 .package-tab {
@@ -58,7 +84,7 @@
 
     &__top-container {
         @include xy-grid;
-        margin-bottom: 92px;
+        margin-bottom: rem_calc(92px);
     }
 
     &__left {
@@ -72,35 +98,35 @@
     }
 
     &__title {
-        margin-bottom: 37px;
+        margin-bottom: rem_calc(37px);
         letter-spacing: 0.8px;
     }
 
     &__subtitle {
         letter-spacing: 0.6px;
         color: #000000;
-        margin-bottom: 20px;
+        margin-bottom: rem_calc(20px);
 
         &_small {
-            font-size: 24px;
-            line-height: 28px;
-            margin-bottom: 20px;
+            font-size: rem_calc(24px);
+            line-height: rem_calc(28px);
+            margin-bottom: rem_calc(20px);
         }
     }
 
     &__text {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: rem_calc(20px);
+        line-height: rem_calc(28px);
         letter-spacing: 0.857143px;
         color: #000000;
 
     }
 
     &__img {
-        margin-top: 20px;
-        width: 420px;
+        margin-top: rem_calc(20px);
+        width: rem_calc(420px);
         max-width: initial;
-        margin-left: -37px;
+        margin-left: rem_calc(-37p)x;
 
     }
 
@@ -113,21 +139,21 @@
     }
 
     &__column-title {
-        margin-bottom: 40px;
+        margin-bottom: rem_calc(40px);
         letter-spacing: 0.6px;
 
     }
 
 
     &__document {
-        margin-bottom: 24px;
+        margin-bottom: rem_calc(24px);
     }
 
 
     &__link {
         display: inline-block;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: rem_calc(18px);
+        line-height: rem_calc(26px);
         letter-spacing: 0.4px;
 
         span {
@@ -136,13 +162,13 @@
     }
 
     .list {
-        margin-bottom: 45px;
+        margin-bottom: rem_calc(45px);
     }
 
     .list__item {
-        margin-bottom: 22px;
-        font-size: 20px;
-        line-height: 28px;
+        margin-bottom: rem_calc(22px);
+        font-size: rem_calc(20px);
+        line-height: rem_calc(28px);
         letter-spacing: 0.4px;
     }
 
@@ -150,13 +176,13 @@
 }
 
 .package-card {
-    padding: 32px 26px 24px 40px;
+    padding: rem_calc(32px 26px 24px 40px);
     background: #FFFFFF;
     border: 1px solid #E9EEF1;
     box-sizing: border-box;
     box-shadow: 0px 4px 16px rgba(233, 238, 241, 0.6);
-    border-radius: 16px;
-    margin-bottom: 25px;
+    border-radius: rem_calc(16px);
+    margin-bottom: rem_calc(25px);
 
     &_blue {
         box-shadow: none;
@@ -165,20 +191,20 @@
     }
 
     &__title {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: rem_calc(24px);
+        line-height: rem_calc(28px);
         letter-spacing: 0.6px;
-        margin-bottom: 16px;
+        margin-bottom: rem_calc(16px);
     }
 
     &__bonus {
-        padding-top: 24px;
-        font-size: 20px;
-        line-height: 36px;
+        padding-top: rem_calc(24px);
+        font-size: rem_calc(20px);
+        line-height: rem_calc(36px);
         letter-spacing: 0.6px;
         font-family: "GT Eesti Pro Display";
         font-weight: 500;
-        margin-bottom: 8px;
+        margin-bottom: rem_calc(8px);
 
         &:last-child {
             margin-bottom: 0;
@@ -187,13 +213,13 @@
     }
 
     &__percent {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: rem_calc(30px);
+        line-height: rem_calc(36px);
     }
 
     &__text {
         letter-spacing: 0.4px;
-        font-size: 20px;
-        line-height: 28px;
+        font-size: rem_calc(20px);
+        line-height: rem_calc(28px);
     }
 }

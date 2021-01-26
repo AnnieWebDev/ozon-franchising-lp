@@ -1,23 +1,24 @@
 .partners {
+    padding-bottom: rem_calc(80px);
 
     &__title {
         text-align: center;
-        padding: 80px 0;
+        padding: rem_calc(80px 0);
     }
 
     &__container {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        width: 1176px;
+        width: rem_calc(1176px);
 
     }
 
     &__card {
         box-shadow: 2px 2px 20px #E9EEF1;
-        border-radius: 12px;
-        padding: 32px 24px;
-        line-height: 24px;
+        border-radius: rem_calc(12px);
+        padding: rem_calc(32px 24px);
+        line-height: rem_calc(24px);
         letter-spacing: 0.4px;
 
     }
@@ -26,14 +27,14 @@
         display: block;
         margin: 0 auto;
         border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        margin-bottom: 24px;
+        width: rem_calc(120px);
+        height: rem_calc(120px);
+        margin-bottom: rem_calc(24px);
     }
 
 
     &__card-title {
-        margin-bottom: 20px;
+        margin-bottom: rem_calc(20px);
         text-align: center;
         letter-spacing: 0.6px;
     }

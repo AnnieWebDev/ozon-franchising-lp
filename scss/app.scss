@@ -23,7 +23,7 @@
 // @include foundation-close-button;
 // @include foundation-label;
 // @include foundation-progress-bar;
-// @include foundation-slider;
+@include foundation-slider;
 // @include foundation-switch;
 // @include foundation-table;
 // // Basic components
@@ -68,6 +68,7 @@
 
 
 
+
 html {
     font-size: 1.08696vw;
 
@@ -76,7 +77,7 @@ html {
     }
 }
 
-.main {
+.main__wrapper {
     @include xy-grid-container();
 }
 
@@ -152,24 +153,24 @@ html {
     margin: 0;
 
     &__item {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: rem_calc(18px);
+        line-height: rem_calc(26px);
         letter-spacing: 0.4px;
-        margin-bottom: 24px;
+        margin-bottom: rem_calc(24px);
         list-style-type: none;
         position: relative;
-        padding-left: 36px;
+        padding-left: rem_calc(36px);
 
         &:before {
             content: '';
             position: absolute;
             left: 0;
-            top: 10px;
+            top: rem_calc(10px);
             display: block;
-            width: 18px;
-            height: 2px;
+            width: rem_calc(18px);
+            height: rem_calc(2px);
             background-color: #001A34;
-            border-radius: 100px;
+            border-radius: rem_calc(100px);
 
         }
     }
@@ -186,7 +187,6 @@ html {
     padding: rem_calc(22px 61px);
     font-size: rem_calc(22px);
     line-height: rem_calc(20px);
-    max-width: rem_calc(296px);
     display: inline-block;
     transition: 0.3s;
 
@@ -309,6 +309,179 @@ html {
 
 }
 
+.slider {
+    height: rem_calc(2px);
+    background: #DEE5EA;
+    border-radius: rem_calc(20px);
+    margin-bottom: rem_calc(10px);
+
+    &-handle {
+        width: rem_calc(20px);
+        height: rem_calc(20px);
+        background: #005BFF;
+        border-radius: 50%;
+    }
+
+    &-fill {
+        height: rem_calc(2px);
+        background: #005BFF;
+        border-radius: rem_calc(20px);
+    }
+}
+
+.swiper-slider {
+    position: relative;
+
+    &__arrow {
+        width: rem_calc(16px);
+        height: rem_calc(16px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        margin-top: rem_calc(-8px);
+        cursor: pointer;
+
+
+        &_left {
+            left: rem_calc(-90px);
+            background-image: url('../img/icons/arrowLeft.svg');
+        }
+
+        &_right {
+            right: rem_calc(-90px);
+            background-image: url('../img/icons/arrowRight2.svg');
+        }
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__label {
+        display: block;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__input-container {
+        width: rem_calc(376px);
+        margin-bottom: rem_calc(20px);
+
+
+    }
+
+    &__input {
+        background: #FFFFFF;
+        border: 1px solid #DEE5EA;
+        box-sizing: border-box;
+        border-radius: rem_calc(6px);
+        padding: rem_calc(27px 20px 7px);
+        font-family: GT Eesti Pro Display;
+        font-size: rem_calc(18px);
+        line-height: rem_calc(24px);
+        letter-spacing: 0.7px;
+        height: initial;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__placeholder {
+        position: absolute;
+        font-family: GT Eesti Pro Display;
+        font-size: rem_calc(18px);
+        line-height: rem_calc(24px);
+        letter-spacing: 0.7px;
+        color: #667585;
+        top: rem_calc(20px);
+        left: rem_calc(20px);
+        transition: 0.2s linear;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+
+        &_focus {
+            top: rem_calc(7px);
+            font-size: rem_calc(14px);
+
+        }
+    }
+
+    &__hint {
+        font-family: GT Eesti Pro Text;
+        font-size: rem_calc(14px);
+        line-height: rem_calc(18px);
+        letter-spacing: 0.5px;
+        color: #99A3AD;
+        margin-top: rem_calc(20px);
+    }
+
+
+
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #DEE5EA;
+    height: rem_calc(59px);
+    border-radius: rem_calc(6px);
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    outline: none;
+    box-shadow: 0 0 5px #cacaca;
+    border: 1px solid #8a8a8a;
+}
+
+.select2-container--default .select2-selection--single {
+    outline: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #001A34;
+    padding: rem_calc(18px 20px 7px);
+    font-family: GT Eesti Pro Display;
+    font-size: rem_calc(18px);
+    line-height: rem_calc(24px);
+    letter-spacing: 0.7px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #667585;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    background-image: url('../img/icons/arrowDropdown.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem_calc(17px);
+    height: rem_calc(16px);
+    top: 50%;
+    margin-top: rem_calc(-8px);
+    right: rem_calc(20px);
+    transition: 0.3s linear;
+
+}
+
+.select2-container--open .select2-selection__arrow {
+    transform: rotate(180deg);
+}
+
 @import 'header';
 @import 'banner';
 @import 'statistics';
@@ -320,3 +493,4 @@ html {
 @import 'from-you';
 @import 'help';
 @import 'calc';
+@import 'request';

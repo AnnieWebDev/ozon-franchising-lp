@@ -6,7 +6,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ozon-franchising</title>
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css">
+
 </head>
 
 <body>
@@ -87,710 +91,930 @@
 
     </header>
     <main class="main">
-        <section class="banner">
-            <div class="banner__content">
-                <h2 class="banner__title">Откройте пункт выдачи Ozon <br>
-                    в своём городе — быстро<br>
-                    и с минимальными затратами
+        <div class="main__wrapper">
+            <section class="banner">
+                <div class="banner__content">
+                    <h2 class="banner__title">Откройте пункт выдачи Ozon <br>
+                        в своём городе — быстро<br>
+                        и с минимальными затратами
+                    </h2>
+                    <p class="banner__text">А мы обеспечим стабильный приток клиентов <br>
+                        и поддержку на всех этапах развития вашего бизнеса.</p>
+                    <a href="#" class="btn banner__btn">Оставить заявку</a>
+                </div>
+            </section>
+            <section class="statistics">
+                <div class="statistics__index">
+                    <span class="statistics__index-number">21</span>
+                    <p>год в онлайн-<br>
+                        продажах</p>
+                </div>
+                <div class="statistics__index">
+                    <span class="statistics__index-number">150</span>
+                    <p>новых пунктов<br>
+                        каждую неделю</p>
+                </div>
+                <div class="statistics__index">
+                    <span class="statistics__index-number">1.8</span>
+                    <p>открытых пунктов<br>
+                        на одного партнёра</p>
+                </div>
+                <div class="statistics__index">
+                    <span class="statistics__index-number">150 000</span>
+                    <p>новых заказов<br> ежедневно</p>
+                </div>
+            </section>
+            <section class="why">
+                <h2 class="why__title">Почему нас выбирают</h2>
+                <div class="cards">
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_pig cards__icon "></span>
+                        </div>
+                        <h2 class="cards__title">Экономно</h2>
+                        <p class="cards__sub-title">Взнос 0 ₽</p>
+                        <p class="cards__text">
+                            Найдите помещение <br>
+                            и открывайтесь — никаких <br>
+                            стартовых взносов и роялти.
+
+                        </p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_clock cards__icon"></span>
+                        </div>
+                        <h2 class="cards__title">Быстро</h2>
+                        <p class="cards__sub-title">Срок запуска 14 дней</p>
+                        <p class="cards__text">
+                            У нас простые требования — <br>
+                            подготовьте помещение, подпишите <br>
+                            договор за 2 дня и запускайтесь.
+                        </p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_rub cards__icon"></span>
+                        </div>
+                        <h2 class="cards__title">Доступно</h2>
+                        <p class="cards__sub-title">Инвестиции от 80 000 ₽</p>
+                        <p class="cards__text">
+                            Инвестируйте только в ремонт<br>
+                            и мебель, а мы предоставим<br>
+                            бренд-материалы и вывеску.</p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_blank cards__icon"></span>
+                        </div>
+                        <h2 class="cards__title">Просто</h2>
+                        <p class="cards__sub-title">Всего 3 операции</p>
+                        <p class="cards__text">
+                            Принимайте товары на склад,<br>
+                            выдавайте заказы клиентам<br>
+                            и оформляйте возвраты.
+
+                        </p>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_car cards__icon"></span>
+                        </div>
+                        <h2 class="cards__title">Гибко</h2>
+                        <p class="cards__sub-title">Доп. доход 30 000 ₽</p>
+                        <p class="cards__text">
+                            Работайте с другими логистическими<br>
+                            операторами и получайте<br>
+                            дополнительный доход.
+                        </p>
+                    </div>
+                    <a class="cards__item why__card-full-blue" href="#" target="_blank">
+                        Оставить заявку<br>
+                        прямо сейчас
+                        <div class="cards__item-arrow">
+                            <span class="icon icon_arrow-right"></span>
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+            <section class="reasons">
+                <h2 class="reasons__title">5 причин открыть пункт выдачи Ozon</h2>
+                <div class="reasons__container">
+                    <div class="reasons__card">
+                        <h2 class="reasons__card-title">1</h2>
+                        <p class="reasons__card-text">Стремительный<br>
+                            рост онлайн-<br>
+                            покупок в стране
+                        </p>
+                    </div>
+                    <div class="reasons__card">
+                        <h2 class="reasons__card-title">2</h2>
+                        <p class="reasons__card-text">Высокая<br>
+                            узнаваемость<br>
+                            бренда и активное<br>
+                            развитие компании
+                        </p>
+                    </div>
+                    <div class="reasons__card">
+                        <h2 class="reasons__card-title">3</h2>
+                        <p class="reasons__card-text">Большое<br>
+                            количество<br>
+                            подходящих мест<br>
+                            для точек с низкой<br>
+                            арендной ставкой
+                        </p>
+                    </div>
+                    <div class="reasons__card">
+                        <h2 class="reasons__card-title">4</h2>
+                        <p class="reasons__card-text">Возможность<br>
+                            открыть несколько<br>
+                            пунктов выдачи,<br>
+                            «охранная зона»<br>
+                            вокруг каждого пункта</p>
+                    </div>
+                    <div class="reasons__card">
+                        <h2 class="reasons__card-title">5</h2>
+                        <p class="reasons__card-text">Высокий<br>
+                            пассивный доход,<br>
+                            заработок выше,<br>
+                            чем от банковских<br>
+                            депозитов
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="packages">
+                <h2 class="packages__title">Выберите свой пакет</h2>
+                <ul class="packages__tabs" data-tabs id="packagesTabs">
+                    <li class="tabs-title is-active packages__tabs-title"><a href="#package1"
+                            aria-selected="true">«Максимум
+                            бренда»</a></li>
+                    <li class="tabs-title packages__tabs-title"><a data-tabs-target="package2" href="#package2">«Точка
+                            роста»</a>
+                    </li>
+                </ul>
+                <div class="tabs-content packages__tabs-content" data-tabs-content="packagesTabs">
+                    <div class="tabs-panel package-tab packages__tabs-panel is-active" id="package1">
+                        <div class="package-tab__top-container">
+                            <div class="package-tab__left">
+                                <h2 class="package-tab__title">«Максимум бренда»</h2>
+                                <h4 class="package-tab__subtitle">Пункт выдачи заказов в фирменном стиле Ozon</h4>
+                                <p class="package-tab__text">
+                                    Допускается размещение внутри существующих торговых зон, а также выдача посылок
+                                    других
+                                    компаний. Без использования стороннего брендинга.
+                                </p>
+                            </div>
+                            <div class="package-tab__right">
+                                <img src="./img/package1.jpg" alt="Максимум бренда" class="package-tab__img">
+                            </div>
+                        </div>
+                        <div class="package-tab__columns">
+                            <div class="package-tab__column">
+                                <h6 class="package-tab__column-title">
+                                    Требования к помещениям:
+                                </h6>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        Площадь помещения<br>
+                                        от 30 кв. м
+                                    </li>
+                                    <li class="list__item">
+                                        Плошадь клиентской зоны<br>
+                                        от 10 кв. м (рекомендуется<br>
+                                        15 кв. м)
+                                    </li>
+                                    <li class="list__item">
+                                        Высота потолков клиентской<br>
+                                        зоны от 2,5 м
+                                    </li>
+                                    <li class="list__item">
+                                        Примерочная с удобствами<br>
+                                        (освещение, зеркало,<br>
+                                        коврик, пуф, ложка для<br>
+                                        обуви, крючки для вещей)
+                                    </li>
+                                    <li class="list__item">
+                                        Стол проверки заказов<br>
+                                        с розетками
+                                    </li>
+                                    <li class="list__item">
+                                        Возможность размещения<br>
+                                        на складе любых объёмов заказа
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="package-tab__column">
+                                <h6 class="package-tab__column-title">
+                                    Брендинг пункта выдачи заказов
+                                </h6>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        Ремонт и ресепшн <br>
+                                        по бренд-стандартам Ozon
+
+                                    </li>
+                                    <li class="list__item">
+                                        Мы предоставим объёмную<br>
+                                        вывеску для фасада
+
+                                    </li>
+                                    <li class="list__item">
+                                        Фирменное оформление стен<br>
+                                        (мы предоставим логотип<br>
+                                        и трафаретные надписи)
+                                    </li>
+                                </ul>
+                                <h6 class="package-tab__column-title">
+                                    Материалы для скачивания
+                                </h6>
+                                <div class="package-tab__document">
+                                    <a href="#" target="_blank" class="package-tab__link">
+                                        <span class="icon icon_document"></span>
+                                        <span>Агентский договор</span>
+                                    </a>
+                                </div>
+                                <div class="package-tab__document">
+                                    <a href="#" target="_blank" class="package-tab__link">
+                                        <span class="icon icon_document"></span>
+                                        <span>Брендбук Ozon</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="package-tab__column">
+                                <div class="package-card package-card_blue">
+                                    <h5 class="package-card__title">
+                                        Ваше вознаграждение
+                                    </h5>
+                                    <div class="package-card__bonus">
+                                        <span class="package-card__percent">4,4%</span><br>
+                                        от оборота в точке
+                                    </div>
+                                    <div class="package-card__bonus">
+                                        <span class="package-card__percent">8,8%</span><br>
+                                        от оборота в первые 3 месяца
+                                    </div>
+                                </div>
+                                <div class="package-card">
+                                    <h5 class="package-card__title">
+                                        Защита от конкуренции
+                                    </h5>
+                                    <p class="package-card__text">
+                                        Рядом с вашим пунктом выдачи<br>
+                                        не будет других пунктов<br>
+                                        выдачи Ozon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-panel packages__tabs-panel" id="package2">
+
+                        <div class="package-tab__top-container">
+                            <div class="package-tab__left">
+                                <h2 class="package-tab__title">«Точка роста»</h2>
+                                <h5 class="package-tab__subtitle package-tab__subtitle_small">
+                                    Пункт выдачи заказов от 20 кв.м с наружной вывеской <br>
+                                    и минимальным набором брендинга в интерьере
+                                </h5>
+                                <p class="package-tab__text">
+                                    Допускается размещение внутри существующих торговых зон, а также выдача посылок
+                                    других
+                                    компаний. Без использования стороннего брендинга.
+                                </p>
+                            </div>
+                            <div class="package-tab__right">
+                                <img src="./img/package2.jpg" alt="Максимум бренда" class="package-tab__img">
+                            </div>
+                        </div>
+                        <div class="package-tab__columns">
+                            <div class="package-tab__column">
+                                <h6 class="package-tab__column-title">
+                                    Требования к помещениям:
+                                </h6>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        Площадь помещения<br>
+                                        от 20 кв. м
+                                    </li>
+                                    <li class="list__item">
+                                        Плошадь клиентской зоны<br>
+                                        от 10 кв. м (рекомендуется<br>
+                                        15 кв. м)
+                                    </li>
+                                    <li class="list__item">
+                                        Высота потолков клиентской<br>
+                                        зоны от 2,5 м
+                                    </li>
+                                    <li class="list__item">
+                                        Примерочная с удобствами<br>
+                                        (освещение, зеркало,<br>
+                                        коврик, пуф, ложка для<br>
+                                        обуви, крючки для вещей)
+                                    </li>
+                                    <li class="list__item">
+                                        Стол проверки заказов<br>
+                                        с розетками
+                                    </li>
+                                    <li class="list__item">
+                                        Возможность размещения<br>
+                                        на складе любых объёмов заказа
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="package-tab__column">
+                                <h6 class="package-tab__column-title">
+                                    Брендинг пункта выдачи заказов
+                                </h6>
+                                <ul class="list">
+                                    <li class="list__item">
+                                        Однотонные стены нейтральных<br>
+                                        тонов
+
+                                    </li>
+                                    <li class="list__item">
+                                        Белая стойка на ресепшн<br>
+                                        эконом-класса или стандарт<br>
+                                        мебели со шпоном «Сонома»
+
+                                    </li>
+                                    <li class="list__item">
+                                        Мы предоставим объёмную<br>
+                                        вывеску или панель-кронштейн<br>
+                                        для размещения на фасаде
+                                    </li>
+                                    <li class="list__item">
+                                        Мы предоставим баннер Ozon<br>
+                                        для размещения на одной<br>
+                                        из стен
+                                    </li>
+
+                                </ul>
+                                <h6 class="package-tab__column-title">
+                                    Материалы для скачивания
+                                </h6>
+                                <div class="package-tab__document">
+                                    <a href="#" target="_blank" class="package-tab__link">
+                                        <span class="icon icon_document"></span>
+                                        <span>Агентский договор</span>
+                                    </a>
+                                </div>
+                                <div class="package-tab__document">
+                                    <a href="#" target="_blank" class="package-tab__link">
+                                        <span class="icon icon_document"></span>
+                                        <span>Брендбук Ozon</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="package-tab__column">
+                                <div class="package-card package-card_blue">
+                                    <h5 class="package-card__title">
+                                        Ваше вознаграждение
+                                    </h5>
+                                    <div class="package-card__bonus">
+                                        <span class="package-card__percent">3,5%</span><br>
+                                        от оборота в точке
+                                    </div>
+                                    <div class="package-card__bonus">
+                                        <span class="package-card__percent">7%</span><br>
+                                        от оборота в первые 3 месяца
+                                    </div>
+                                </div>
+                                <div class="package-card">
+                                    <h5 class="package-card__title">
+                                        Защита от конкуренции
+                                    </h5>
+                                    <p class="package-card__text">
+                                        Рядом с вашим пунктом выдачи<br>
+                                        не будет других пунктов<br>
+                                        выдачи Ozon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="packages__gallery">
+                    <h6 class="packages__gallery-title">Наши пункты выдачи</h6>
+                    <div class="packages__gallery-inner">
+                        <a href="img/gallery/1@3x.jpg" data-rel="lightcase:collection" class="packages__gallery-item">
+                            <img src="img/gallery/1.jpg" class="packages__gallery-image">
+                        </a>
+                        <a href="img/gallery/2@3x.jpg" data-rel="lightcase:collection" class="packages__gallery-item">
+                            <img src="img/gallery/2.jpg" class="packages__gallery-image">
+                        </a>
+                        <a href="img/gallery/3@3x.jpg" data-rel="lightcase:collection" class="packages__gallery-item">
+                            <img src="img/gallery/3.jpg" class="packages__gallery-image">
+                        </a>
+                        <a href="img/gallery/4@3x.jpg" data-rel="lightcase:collection" class="packages__gallery-item">
+                            <img src="img/gallery/4.jpg" class="packages__gallery-image">
+                        </a>
+                        <a href="img/gallery/5@3x.jpg" data-rel="lightcase:collection" class="packages__gallery-item">
+                            <img src="img/gallery/5.jpg" class="packages__gallery-image">
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="help">
+                <h2 class="help__title">
+                    Поможем с финансированием
                 </h2>
-                <p class="banner__text">А мы обеспечим стабильный приток клиентов <br>
-                    и поддержку на всех этапах развития вашего бизнеса.</p>
-                <a href="#" class="btn banner__btn">Оставить заявку</a>
-            </div>
-        </section>
-        <section class="statistics">
-            <div class="statistics__index">
-                <span class="statistics__index-number">21</span>
-                <p>год в онлайн-<br>
-                    продажах</p>
-            </div>
-            <div class="statistics__index">
-                <span class="statistics__index-number">150</span>
-                <p>новых пунктов<br>
-                    каждую неделю</p>
-            </div>
-            <div class="statistics__index">
-                <span class="statistics__index-number">1.8</span>
-                <p>открытых пунктов<br>
-                    на одного партнёра</p>
-            </div>
-            <div class="statistics__index">
-                <span class="statistics__index-number">150 000</span>
-                <p>новых заказов<br> ежедневно</p>
-            </div>
-        </section>
-        <section class="why">
-            <h2 class="why__title">Почему нас выбирают</h2>
-            <div class="cards">
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_pig cards__icon "></span>
+                <p class="help__text">
+                    Получите выгодный заём на открытие нового пункта выдачи!
+                </p>
+                <div class="help__wrapper">
+                    <div class="help__block">
+                        <p class="help__block-text">до</p>
+                        <div class="help__block-feature">100 000 ₽</div>
+                        <p class="help__block-text">сумма заёма</p>
                     </div>
-                    <h2 class="cards__title">Экономно</h2>
-                    <p class="cards__sub-title">Взнос 0 ₽</p>
-                    <p class="cards__text">
-                        Найдите помещение <br>
-                        и открывайтесь — никаких <br>
-                        стартовых взносов и роялти.
-
-                    </p>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_clock cards__icon"></span>
+                    <div class="help__block help__block_middle">
+                        <p class="help__block-text">до</p>
+                        <div class="help__block-feature">2 дней</div>
+                        <p class="help__block-text">рассмотрение заявки</p>
                     </div>
-                    <h2 class="cards__title">Быстро</h2>
-                    <p class="cards__sub-title">Срок запуска 14 дней</p>
-                    <p class="cards__text">
-                        У нас простые требования — <br>
-                        подготовьте помещение, подпишите <br>
-                        договор за 2 дня и запускайтесь.
-                    </p>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_rub cards__icon"></span>
+                    <div class="help__block">
+                        <p class="help__block-text">до</p>
+                        <div class="help__block-feature">6 месяцев</div>
+                        <p class="help__block-text">срок пользования заёма</p>
                     </div>
-                    <h2 class="cards__title">Доступно</h2>
-                    <p class="cards__sub-title">Инвестиции от 80 000 ₽</p>
-                    <p class="cards__text">
-                        Инвестируйте только в ремонт<br>
-                        и мебель, а мы предоставим<br>
-                        бренд-материалы и вывеску.</p>
                 </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_blank cards__icon"></span>
-                    </div>
-                    <h2 class="cards__title">Просто</h2>
-                    <p class="cards__sub-title">Всего 3 операции</p>
-                    <p class="cards__text">
-                        Принимайте товары на склад,<br>
-                        выдавайте заказы клиентам<br>
-                        и оформляйте возвраты.
 
-                    </p>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_car cards__icon"></span>
-                    </div>
-                    <h2 class="cards__title">Гибко</h2>
-                    <p class="cards__sub-title">Доп. доход 30 000 ₽</p>
-                    <p class="cards__text">
-                        Работайте с другими логистическими<br>
-                        операторами и получайте<br>
-                        дополнительный доход.
-                    </p>
-                </div>
-                <a class="cards__item why__card-full-blue" href="#" target="_blank">
-                    Оставить заявку<br>
-                    прямо сейчас
-                    <div class="cards__item-arrow">
-                        <span class="icon icon_arrow-right"></span>
-                    </div>
-
-                </a>
-
-
-            </div>
-
-        </section>
-        <section class="reasons">
-            <h2 class="reasons__title">5 причин открыть пункт выдачи Ozon</h2>
-            <div class="reasons__container">
-                <div class="reasons__card">
-                    <h2 class="reasons__card-title">1</h2>
-                    <p class="reasons__card-text">Стремительный<br>
-                        рост онлайн-<br>
-                        покупок в стране
-                    </p>
-                </div>
-                <div class="reasons__card">
-                    <h2 class="reasons__card-title">2</h2>
-                    <p class="reasons__card-text">Высокая<br>
-                        узнаваемость<br>
-                        бренда и активное<br>
-                        развитие компании
-                    </p>
-                </div>
-                <div class="reasons__card">
-                    <h2 class="reasons__card-title">3</h2>
-                    <p class="reasons__card-text">Большое<br>
-                        количество<br>
-                        подходящих мест<br>
-                        для точек с низкой<br>
-                        арендной ставкой
-                    </p>
-                </div>
-                <div class="reasons__card">
-                    <h2 class="reasons__card-title">4</h2>
-                    <p class="reasons__card-text">Возможность<br>
-                        открыть несколько<br>
-                        пунктов выдачи,<br>
-                        «охранная зона»<br>
-                        вокруг каждого пункта</p>
-                </div>
-                <div class="reasons__card">
-                    <h2 class="reasons__card-title">5</h2>
-                    <p class="reasons__card-text">Высокий<br>
-                        пассивный доход,<br>
-                        заработок выше,<br>
-                        чем от банковских<br>
-                        депозитов
-                    </p>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="packages">
-            <h2 class="packages__title">Выберите свой пакет</h2>
-            <ul class="packages__tabs" data-tabs id="packagesTabs">
-                <li class="tabs-title is-active packages__tabs-title"><a href="#package1" aria-selected="true">«Максимум
-                        бренда»</a></li>
-                <li class="tabs-title packages__tabs-title"><a data-tabs-target="package2" href="#package2">«Точка
-                        роста»</a>
-                </li>
-            </ul>
-            <div class="tabs-content packages__tabs-content" data-tabs-content="packagesTabs">
-                <div class="tabs-panel package-tab packages__tabs-panel is-active" id="package1">
-                    <div class="package-tab__top-container">
-                        <div class="package-tab__left">
-                            <h2 class="package-tab__title">«Максимум бренда»</h2>
-                            <h4 class="package-tab__subtitle">Пункт выдачи заказов в фирменном стиле Ozon</h4>
-                            <p class="package-tab__text">
-                                Допускается размещение внутри существующих торговых зон, а также выдача посылок других
-                                компаний. Без использования стороннего брендинга.
-                            </p>
-                        </div>
-                        <div class="package-tab__right">
-                            <img src="./img/package1.jpg" alt="Максимум бренда" class="package-tab__img">
-                        </div>
-                    </div>
-                    <div class="package-tab__columns">
-                        <div class="package-tab__column">
-                            <h6 class="package-tab__column-title">
-                                Требования к помещениям:
-                            </h6>
-                            <ul class="list">
-                                <li class="list__item">
-                                    Площадь помещения<br>
-                                    от 30 кв. м
-                                </li>
-                                <li class="list__item">
-                                    Плошадь клиентской зоны<br>
-                                    от 10 кв. м (рекомендуется<br>
-                                    15 кв. м)
-                                </li>
-                                <li class="list__item">
-                                    Высота потолков клиентской<br>
-                                    зоны от 2,5 м
-                                </li>
-                                <li class="list__item">
-                                    Примерочная с удобствами<br>
-                                    (освещение, зеркало,<br>
-                                    коврик, пуф, ложка для<br>
-                                    обуви, крючки для вещей)
-                                </li>
-                                <li class="list__item">
-                                    Стол проверки заказов<br>
-                                    с розетками
-                                </li>
-                                <li class="list__item">
-                                    Возможность размещения<br>
-                                    на складе любых объёмов заказа
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="package-tab__column">
-                            <h6 class="package-tab__column-title">
-                                Брендинг пункта выдачи заказов
-                            </h6>
-                            <ul class="list">
-                                <li class="list__item">
-                                    Ремонт и ресепшн <br>
-                                    по бренд-стандартам Ozon
-
-                                </li>
-                                <li class="list__item">
-                                    Мы предоставим объёмную<br>
-                                    вывеску для фасада
-
-                                </li>
-                                <li class="list__item">
-                                    Фирменное оформление стен<br>
-                                    (мы предоставим логотип<br>
-                                    и трафаретные надписи)
-                                </li>
-                            </ul>
-                            <h6 class="package-tab__column-title">
-                                Материалы для скачивания
-                            </h6>
-                            <div class="package-tab__document">
-                                <a href="#" target="_blank" class="package-tab__link">
-                                    <span class="icon icon_document"></span>
-                                    <span>Агентский договор</span>
-                                </a>
+            </section>
+            <section class="calc">
+                <h2 class="calc__title">
+                    Калькулятор дохода
+                </h2>
+                <div class="calc__wrapper">
+                    <div class="calc__body">
+                        <div class="calc__body-block">
+                            <div class="calc__body-title">Выберите пакет</div>
+                            <div class="calc__body-wrapper">
+                                <button class="calc__btn calc__btn-package calc__btn_grey calc__btn_active"
+                                    data-package="0">Максимум бренда</button>
+                                <button class="calc__btn calc__btn-package calc__btn_grey" data-package="1">Точка
+                                    роста</button>
                             </div>
-                            <div class="package-tab__document">
-                                <a href="#" target="_blank" class="package-tab__link">
-                                    <span class="icon icon_document"></span>
-                                    <span>Брендбук Ozon</span>
-                                </a>
-                            </div>
-
                         </div>
-                        <div class="package-tab__column">
-                            <div class="package-card package-card_blue">
-                                <h5 class="package-card__title">
+                        <div class="calc__body-block">
+                            <div class="calc__body-title">Количество точек</div>
+                            <div class="calc__body-wrapper">
+                                <button class="calc__btn calc__btn_point" data-point="1">1</button>
+                                <button class="calc__btn calc__btn_point" data-point="2">2</button>
+                                <button class="calc__btn calc__btn_point" data-point="3">3</button>
+                                <button class="calc__btn calc__btn_point" data-point="4">4</button>
+                                <button class="calc__btn calc__btn_point" data-point="5">5</button>
+                                <label class="calc__input-label calc__input-point">
+                                    <input type="number" min="1" max="10000" class="calc__input">
+                                    <div class="calc__input-result">
+                                        Введите своё количество
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="calc__body-sliders">
+                            <div class="calc__slider-container">
+                                <div class="calc__body-title">Товарооборот точки</div>
+                                <div class="calc__slider-value"></div>
+                                <div class="slider calc__slider-turnover" data-slider data-initial-start="3000000"
+                                    data-start="0" data-end="7000000" data-step="20000">
+                                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                            <div class="calc__slider-container">
+                                <div class="calc__body-title">Стоимость аренды</div>
+                                <div class="calc__slider-value"></div>
+                                <div class="slider calc__slider-rent" data-slider data-initial-start="0" data-start="0"
+                                    data-end="200000" data-step="1000">
+                                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                            <div class="calc__slider-container">
+                                <div class="calc__body-title">Фонд оплаты труда</div>
+                                <div class="calc__slider-value"></div>
+                                <div class="slider calc__slider-fund" data-slider data-initial-start="50000"
+                                    data-start="0" data-end="60000" data-step="1000">
+                                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                            <div class="calc__slider-container">
+                                <div class="calc__body-title">Прочие расходы</div>
+                                <div class="calc__slider-value"></div>
+                                <div class="slider calc__slider-other" data-slider data-initial-start="0" data-start="0"
+                                    data-end="10000" data-step="100">
+                                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                            <div class="calc__slider-container">
+                                <div class="calc__body-title">Дополнительный доход</div>
+                                <div class="calc__slider-value"></div>
+                                <div class="slider calc__slider-additional" data-slider data-initial-start="0"
+                                    data-start="0" data-end="100000" data-step="1000">
+                                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="calc__result">
+                        <div class="calc__result-wrapper">
+                            <div class="calc__reward">
+                                <div class="calc__result-title">
                                     Ваше вознаграждение
-                                </h5>
-                                <div class="package-card__bonus">
-                                    <span class="package-card__percent">4,4%</span><br>
-                                    от оборота в точке
                                 </div>
-                                <div class="package-card__bonus">
-                                    <span class="package-card__percent">8,8%</span><br>
-                                    от оборота в первые 3 месяца
+                                <div class="calc__reward-value">
+                                    132 000 &#8381;
                                 </div>
                             </div>
-                            <div class="package-card">
-                                <h5 class="package-card__title">
-                                    Защита от конкуренции
-                                </h5>
-                                <p class="package-card__text">
-                                    Рядом с вашим пунктом выдачи<br>
-                                    не будет других пунктов<br>
-                                    выдачи Ozon
-                                </p>
+                            <div class="calc__profit">
+                                <div class="calc__result-title">
+                                    Ваша прибыль
+                                </div>
+                                <div class="calc__profit-value">
+                                    82 000 &#8381;
+                                </div>
                             </div>
+
+                            <a href="#" class="btn calc__link">
+                                Оставить заявку
+                            </a>
+
+
                         </div>
+
                     </div>
                 </div>
-                <div class="tabs-panel packages__tabs-panel" id="package2">
-
-                    <div class="package-tab__top-container">
-                        <div class="package-tab__left">
-                            <h2 class="package-tab__title">«Точка роста»</h2>
-                            <h5 class="package-tab__subtitle package-tab__subtitle_small">
-                                Пункт выдачи заказов от 20 кв.м с наружной вывеской <br>
-                                и минимальным набором брендинга в интерьере
-                            </h5>
-                            <p class="package-tab__text">
-                                Допускается размещение внутри существующих торговых зон, а также выдача посылок других
-                                компаний. Без использования стороннего брендинга.
-                            </p>
-                        </div>
-                        <div class="package-tab__right">
-                            <img src="./img/package2.jpg" alt="Максимум бренда" class="package-tab__img">
-                        </div>
-                    </div>
-                    <div class="package-tab__columns">
-                        <div class="package-tab__column">
-                            <h6 class="package-tab__column-title">
-                                Требования к помещениям:
-                            </h6>
-                            <ul class="list">
-                                <li class="list__item">
-                                    Площадь помещения<br>
-                                    от 20 кв. м
-                                </li>
-                                <li class="list__item">
-                                    Плошадь клиентской зоны<br>
-                                    от 10 кв. м (рекомендуется<br>
-                                    15 кв. м)
-                                </li>
-                                <li class="list__item">
-                                    Высота потолков клиентской<br>
-                                    зоны от 2,5 м
-                                </li>
-                                <li class="list__item">
-                                    Примерочная с удобствами<br>
-                                    (освещение, зеркало,<br>
-                                    коврик, пуф, ложка для<br>
-                                    обуви, крючки для вещей)
-                                </li>
-                                <li class="list__item">
-                                    Стол проверки заказов<br>
-                                    с розетками
-                                </li>
-                                <li class="list__item">
-                                    Возможность размещения<br>
-                                    на складе любых объёмов заказа
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="package-tab__column">
-                            <h6 class="package-tab__column-title">
-                                Брендинг пункта выдачи заказов
-                            </h6>
-                            <ul class="list">
-                                <li class="list__item">
-                                    Однотонные стены нейтральных<br>
-                                    тонов
-
-                                </li>
-                                <li class="list__item">
-                                    Белая стойка на ресепшн<br>
-                                    эконом-класса или стандарт<br>
-                                    мебели со шпоном «Сонома»
-
-                                </li>
-                                <li class="list__item">
-                                    Мы предоставим объёмную<br>
-                                    вывеску или панель-кронштейн<br>
-                                    для размещения на фасаде
-                                </li>
-                                <li class="list__item">
-                                    Мы предоставим баннер Ozon<br>
-                                    для размещения на одной<br>
-                                    из стен
-                                </li>
-
-                            </ul>
-                            <h6 class="package-tab__column-title">
-                                Материалы для скачивания
-                            </h6>
-                            <div class="package-tab__document">
-                                <a href="#" target="_blank" class="package-tab__link">
-                                    <span class="icon icon_document"></span>
-                                    <span>Агентский договор</span>
-                                </a>
-                            </div>
-                            <div class="package-tab__document">
-                                <a href="#" target="_blank" class="package-tab__link">
-                                    <span class="icon icon_document"></span>
-                                    <span>Брендбук Ozon</span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="package-tab__column">
-                            <div class="package-card package-card_blue">
-                                <h5 class="package-card__title">
-                                    Ваше вознаграждение
-                                </h5>
-                                <div class="package-card__bonus">
-                                    <span class="package-card__percent">3,5%</span><br>
-                                    от оборота в точке
+            </section>
+            <section class="support">
+                <h2 class="support__title">Окажем поддержку</h2>
+                <div class="swiper-slider support__slider">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper support__slider-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">1</h2>
+                                    <p class="support__card-text">Поможем<br>
+                                        выбрать локацию
+                                    </p>
                                 </div>
-                                <div class="package-card__bonus">
-                                    <span class="package-card__percent">7%</span><br>
-                                    от оборота в первые 3 месяца
+
+                            </div>
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">2</h2>
+                                    <p class="support__card-text">Обучим персонал<br>
+                                        и поможем найти<br>
+                                        поставщиков
+                                    </p>
                                 </div>
                             </div>
-                            <div class="package-card">
-                                <h5 class="package-card__title">
-                                    Защита от конкуренции
-                                </h5>
-                                <p class="package-card__text">
-                                    Рядом с вашим пунктом выдачи<br>
-                                    не будет других пунктов<br>
-                                    выдачи Ozon
-                                </p>
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">3</h2>
+                                    <p class="support__card-text">Поддержим<br>
+                                        массовой<br>
+                                        федеральной <br>
+                                        рекламой Ozon</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">4</h2>
+                                    <p class="support__card-text">Предоставим<br>
+                                        бесплатно вывеску<br>
+                                        и брендированные<br>
+                                        материалы</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">5</h2>
+                                    <p class="support__card-text">Подскажем<br>
+                                        готовые решения<br>
+                                        по локальному<br>
+                                        маркетингу</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide support__slide">
+                                <div class="support__card">
+                                    <h2 class="support__card-title">6</h2>
+                                    <p class="support__card-text">
+                                        Поддержим<br>
+                                        массовой<br>
+                                        федеральной<br>
+                                        рекламой Ozon
+                                </div>
+                            </div>
 
+                        </div>
+
+                    </div>
+                    <button class="swiper-slider__arrow swiper-slider__arrow_left"></button>
+                    <button class="swiper-slider__arrow swiper-slider__arrow_right"></button>
                 </div>
-            </div>
-        </section>
-        <section class="help">
-            <h2 class="help__title">
-                Поможем с финансированием
+            </section>
+            <section class="from-you">
+                <h2 class="from-you__title">Что ожидаем от вас</h2>
+                <div class="cards">
+                    <div class="cards__item">
+                        <div class="cards__icon-container ">
+                            <span class="icon icon_mark cards__icon"></span>
+                        </div>
+                        <h3 class="cards__title">
+                            Хорошее<br>
+                            место
+                        </h3>
+                        <ul class="list from-you__list">
+                            <li class="list__item">
+                                Первая линия, вход<br>
+                                на уровне земли
+                            </li>
+                            <li class="list__item">
+                                Место с высокой<br>
+                                проходимостью<br>
+                                или рядом с остановками<br>
+                                общественного транспорта
+                            </li>
+                            <li class="list__item">
+                                Антискользящее покрытие<br>
+                                ступеней (при их наличии<br>
+                                в зоне входной группы)
+                            </li>
+                            <li class="list__item">
+                                Наличие лифта<br>
+                                (для торговых центров)
+                            </li>
+                            <li class="list__item">
+                                График работы 7 дней<br>
+                                в неделю
+                            </li>
+                            <li class="list__item">
+                                Отсутствие пропускного<br>
+                                режима
+                            </li>
+                            <li class="list__item">
+                                Вместительный склад для<br>
+                                размещения большого<br>
+                                объёма заказов</li>
+                        </ul>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_face cards__icon"></span>
+                        </div>
+                        <h3 class="cards__title">
+                            Хорошее<br>
+                            настроение
+                        </h3>
+                        <ul class="list from-you__list">
+                            <li class="list__item">
+                                Всегда чисто, светло<br>
+                                и уютно как дома
+                            </li>
+                            <li class="list__item">
+                                Хорошо проветриваемое<br>
+                                помещение площадью<br>
+                                от 30 кв. м
+                            </li>
+                            <li class="list__item">
+                                Примерочная с зеркалами
+                            </li>
+                            <li class="list__item">
+                                Розетки для проверки<br>
+                                электроники
+                            </li>
+                            <li class="list__item">
+                                Мебель и оргтехника<br>
+                                в хорошем состоянии
+                            </li>
+                            <li class="list__item">
+                                Специальное место для<br>
+                                распаковки и проверки<br>
+                                заказа
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__icon-container">
+                            <span class="icon icon_star cards__icon"></span>
+                        </div>
+                        <h3 class="cards__title">
+                            Много<br>
+                            бренда
+                        </h3>
+                        <p class="from-you__text_black">
+                            Оформите свой пункт выдачи<br>
+                            в фирменном стиле Ozon<br>
+                            и мы будем платить больше
+                        </p>
+                        <ul class="list from-you__list">
+                            <li class="list__item from-you__list-item-long">
+                                Вывеска Ozon, размещенная<br>
+                                в границах фасада
+                            </li>
+                            <li class="list__item from-you__list-item-long">
+                                Удобная навигация
+                            </li>
+                            <li class="list__item from-you__list-item-long">
+                                Наличие плакатов
+                            </li>
+                            <li class="list__item from-you__list-item-long">
+                                Наличие фирменных пакетов
+                            </li>
+                        </ul>
+                        <p class="cards__text">
+                            Мы обеспечим вас всем необходимым
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <h2 class="partners__title">Наши партнёры</h2>
+                <div class="partners__container">
+                    <div class="partners__card">
+                        <img src="/img/vsevolod.jpg" alt="Всеволод Митряев" class="partners__card-photo">
+                        <h5 class="partners__card-title">Всеволод Митряев</h5>
+                        <p class="partners__card-text">
+                            «В 18 лет начал сотрудничество<br>
+                            с компанией Ozon. Очень быстрый<br>
+                            и перспективный рост - вот, как<br>
+                            я отзываюсь о них. Опытные менеджеры<br>
+                            всегда на связи и подскажут ответы<br>
+                            на любые вопросы. Хороший старт<br>
+                            для любого новичка, а так же новые<br>
+                            возможности для уже опытных<br>
+                            предпринимателей».
+
+                        </p>
+                        </span>
+                    </div>
+                    <div class="partners__card">
+                        <img src="/img/tatiana.jpg" alt="Татьяна Хабарова" class="partners__card-photo">
+                        <h5 class="partners__card-title">Татьяна Хабарова</h5>
+                        <p class="partners__card-text">
+                            «За пять месяцев я создала сеть из 5 ПВЗ,<br>
+                            по вложениям для среднего бизнеса<br>
+                            быстро и доступно. Если учесть ещё<br>
+                            и фин. поддержку на открытие, это очень<br>
+                            круто! Товар сам приезжает в твою точку,<br>
+                            сам уезжает, если не востребован.<br>
+                            После 25 лет розничного бизнеса, это<br>
+                            просто неимоверный кайф. Ни остатков,<br>
+                            ни неликвидов. На окупаемость вышла<br>
+                            уже через 4 месяца».
+                        </p>
+                        </span>
+                    </div>
+                    <div class="partners__card">
+                        <img src="/img/alexander.jpg" alt="Александр Денисов" class="partners__card-photo">
+                        <h5 class="partners__card-title">Александр Денисов</h5>
+                        <p class="partners__card-text">
+                            «Компания всегда идет навстречу своим<br>
+                            партнёрам, поэтому мне удалось<br>
+                            воспользоваться финансовой программой<br>
+                            и открыть 2 пункта выдачи с разницей<br>
+                            в пару месяцев. Надеюсь на дальнейшее<br>
+                            развитие и очень рад быть частью<br>
+                            большой семьи Ozon».
+                        </p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="request">
+            <h2 class="request__title">
+                Оставить заявку
             </h2>
-            <p class="help__text">
-                Получите выгодный заём на открытие нового пункта выдачи!
-            </p>
-            <div class="help__wrapper">
-                <div class="help__block">
-                    <p class="help__block-text">до</p>
-                    <div class="help__block-feature">100 000 ₽</div>
-                    <p class="help__block-text">сумма заёма</p>
+            <form class="form request__form">
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input">
+                        <div class="form__placeholder">
+                            ФИО ген.дир./ИП
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
                 </div>
-                <div class="help__block help__block_middle">
-                    <p class="help__block-text">до</p>
-                    <div class="help__block-feature">2 дней</div>
-                    <p class="help__block-text">рассмотрение заявки</p>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input">
+                        <div class="form__placeholder">
+                            ИНН/Название компании
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
                 </div>
-                <div class="help__block">
-                    <p class="help__block-text">до</p>
-                    <div class="help__block-feature">6 месяцев</div>
-                    <p class="help__block-text">срок пользования заёма</p>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input phone-mask">
+                        <div class="form__placeholder">
+                            Номер телефона
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
                 </div>
-            </div>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input email-mask">
+                        <div class="form__placeholder">
+                            Email
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
+                </div>
+                <div class="form__input-container">
+                    <select class="js-select2">
+                        <option></option>
+                        <option value="1">Точка роста</option>
+                        <option value="2">Максимум бренда</option>
+                    </select>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
+                </div>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input">
+                        <div class="form__placeholder">
+                            Введите промокод
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Код реферальной программы Ozon
+                    </div>
+                </div>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input">
+                        <div class="form__placeholder">
+                            Город
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Код реферальной программы Ozon
+                    </div>
+                </div>
+                <div class="form__input-container">
+                    <label class="form__label">
+                        <input type="text" class="form__input">
+                        <div class="form__placeholder">
+                            Адрес
+                        </div>
+                    </label>
+                    <div class="form__hint">
+                        Обязательно к заполнению
+                    </div>
+                </div>
 
-        </section>
-        <section class="calc">
-            <h2 class="calc__title">
-                Калькулятор дохода
-            </h2>
-            <div class="calc__wrapper">
-                <div class="calc__body">
-                    <div class="calc__body-block">
-                        <div class="calc__body-title">Выберите пакет</div>
-                        <div class="calc__body-wrapper">
-                            <button class="calc__btn calc__btn-package calc__btn_grey calc__btn_active"
-                                data-package="0">Максимум бренда</button>
-                            <button class="calc__btn calc__btn-package calc__btn_grey" data-package="1">Точка
-                                роста</button>
-                        </div>
-                    </div>
-                    <div class="calc__body-block">
-                        <div class="calc__body-title">Количество точек</div>
-                        <div class="calc__body-wrapper">
-                            <button class="calc__btn calc__btn_point" data-point="1">1</button>
-                            <button class="calc__btn calc__btn_point" data-point="2">2</button>
-                            <button class="calc__btn calc__btn_point" data-point="3">3</button>
-                            <button class="calc__btn calc__btn_point" data-point="4">4</button>
-                            <button class="calc__btn calc__btn_point" data-point="5">5</button>
-                            <label class="calc__input-label">
-                                <input type="number" min="1" max="10000" class="calc__input">
-                                <div class="calc__input-result">
-                                    Введите своё количество
-                                </div>
-                            </label>
 
-                        </div>
-                    </div>
-                    <div class="calc__body-sliders">
-                        <div class="calc__body-block">
-                            <div class="calc__body-title">Товарооборот точки</div>
-                        </div>
-                        <div class="calc__body-block">
-                            <div class="calc__body-title">Стоимость аренды</div>
-                        </div>
-                        <div class="calc__body-block">
-                            <div class="calc__body-title">Фонд оплаты труда</div>
-                        </div>
-                        <div class="calc__body-block">
-                            <div class="calc__body-title">Прочие расходы</div>
-                        </div>
-                        <div class="calc__body-block">
-                            <div class="calc__body-title">Дополнительный доход</div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="calc__result"></div>
-            </div>
+            </form>
         </section>
-        <section class="support">
-            <h2 class="support__title">Окажем поддержку</h2>
-            <div class="support__container">
-                <div class="support__card">
-                    <h2 class="support__card-title">1</h2>
-                    <p class="support__card-text">Поможем<br>
-                        выбрать локацию
-                    </p>
-                </div>
-                <div class="support__card">
-                    <h2 class="support__card-title">2</h2>
-                    <p class="support__card-text">Обучим персонал<br>
-                        и поможем найти<br>
-                        поставщиков
-                    </p>
-                </div>
-                <div class="support__card">
-                    <h2 class="support__card-title">3</h2>
-                    <p class="support__card-text">Поддержим<br>
-                        массовой<br>
-                        федеральной <br>
-                        рекламой Ozon</p>
-                </div>
-                <div class="support__card">
-                    <h2 class="support__card-title">4</h2>
-                    <p class="support__card-text">Предоставим<br>
-                        бесплатно вывеску<br>
-                        и брендированные<br>
-                        материалы</p>
-                </div>
-                <div class="support__card">
-                    <h2 class="support__card-title">5</h2>
-                    <p class="support__card-text">Подскажем<br>
-                        готовые решения<br>
-                        по локальному<br>
-                        маркетингу</p>
-                </div>
-            </div>
-        </section>
-        <section class="from-you">
-            <h2 class="from-you__title">Что ожидаем от вас</h2>
-            <div class="cards">
-                <div class="cards__item">
-                    <div class="cards__icon-container ">
-                        <span class="icon icon_mark cards__icon"></span>
-                    </div>
-                    <h3 class="cards__title">
-                        Хорошее<br>
-                        место
-                    </h3>
-                    <ul class="list from-you__list">
-                        <li class="list__item">
-                            Первая линия, вход<br>
-                            на уровне земли
-                        </li>
-                        <li class="list__item">
-                            Место с высокой<br>
-                            проходимостью<br>
-                            или рядом с остановками<br>
-                            общественного транспорта
-                        </li>
-                        <li class="list__item">
-                            Антискользящее покрытие<br>
-                            ступеней (при их наличии<br>
-                            в зоне входной группы)
-                        </li>
-                        <li class="list__item">
-                            Наличие лифта<br>
-                            (для торговых центров)
-                        </li>
-                        <li class="list__item">
-                            График работы 7 дней<br>
-                            в неделю
-                        </li>
-                        <li class="list__item">
-                            Отсутствие пропускного<br>
-                            режима
-                        </li>
-                        <li class="list__item">
-                            Вместительный склад для<br>
-                            размещения большого<br>
-                            объёма заказов</li>
-                    </ul>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_face cards__icon"></span>
-                    </div>
-                    <h3 class="cards__title">
-                        Хорошее<br>
-                        настроение
-                    </h3>
-                    <ul class="list from-you__list">
-                        <li class="list__item">
-                            Всегда чисто, светло<br>
-                            и уютно как дома
-                        </li>
-                        <li class="list__item">
-                            Хорошо проветриваемое<br>
-                            помещение площадью<br>
-                            от 30 кв. м
-                        </li>
-                        <li class="list__item">
-                            Примерочная с зеркалами
-                        </li>
-                        <li class="list__item">
-                            Розетки для проверки<br>
-                            электроники
-                        </li>
-                        <li class="list__item">
-                            Мебель и оргтехника<br>
-                            в хорошем состоянии
-                        </li>
-                        <li class="list__item">
-                            Специальное место для<br>
-                            распаковки и проверки<br>
-                            заказа
-                        </li>
-                    </ul>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__icon-container">
-                        <span class="icon icon_star cards__icon"></span>
-                    </div>
-                    <h3 class="cards__title">
-                        Много<br>
-                        бренда
-                    </h3>
-                    <p class="from-you__text_black">
-                        Оформите свой пункт выдачи<br>
-                        в фирменном стиле Ozon<br>
-                        и мы будем платить больше
-                    </p>
-                    <ul class="list from-you__list">
-                        <li class="list__item from-you__list-item-long">
-                            Вывеска Ozon, размещенная<br>
-                            в границах фасада
-                        </li>
-                        <li class="list__item from-you__list-item-long">
-                            Удобная навигация
-                        </li>
-                        <li class="list__item from-you__list-item-long">
-                            Наличие плакатов
-                        </li>
-                        <li class="list__item from-you__list-item-long">
-                            Наличие фирменных пакетов
-                        </li>
-                    </ul>
-                    <p class="cards__text">
-                        Мы обеспечим вас всем необходимым
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="partners">
-            <h2 class="partners__title">Наши партнёры</h2>
-            <div class="partners__container">
-                <div class="partners__card">
-                    <img src="/img/vsevolod.jpg" alt="Всеволод Митряев" class="partners__card-photo">
-                    <h5 class="partners__card-title">Всеволод Митряев</h5>
-                    <p class="partners__card-text">
-                        «В 18 лет начал сотрудничество<br>
-                        с компанией Ozon. Очень быстрый<br>
-                        и перспективный рост - вот, как<br>
-                        я отзываюсь о них. Опытные менеджеры<br>
-                        всегда на связи и подскажут ответы<br>
-                        на любые вопросы. Хороший старт<br>
-                        для любого новичка, а так же новые<br>
-                        возможности для уже опытных<br>
-                        предпринимателей».
-
-                    </p>
-                    </span>
-                </div>
-                <div class="partners__card">
-                    <img src="/img/tatiana.jpg" alt="Татьяна Хабарова" class="partners__card-photo">
-                    <h5 class="partners__card-title">Татьяна Хабарова</h5>
-                    <p class="partners__card-text">
-                        «За пять месяцев я создала сеть из 5 ПВЗ,<br>
-                        по вложениям для среднего бизнеса<br>
-                        быстро и доступно. Если учесть ещё<br>
-                        и фин. поддержку на открытие, это очень<br>
-                        круто! Товар сам приезжает в твою точку,<br>
-                        сам уезжает, если не востребован.<br>
-                        После 25 лет розничного бизнеса, это<br>
-                        просто неимоверный кайф. Ни остатков,<br>
-                        ни неликвидов. На окупаемость вышла<br>
-                        уже через 4 месяца».
-                    </p>
-                    </span>
-                </div>
-                <div class="partners__card">
-                    <img src="/img/alexander.jpg" alt="Александр Денисов" class="partners__card-photo">
-                    <h5 class="partners__card-title">Александр Денисов</h5>
-                    <p class="partners__card-text">
-                        «Компания всегда идет навстречу своим<br>
-                        партнёрам, поэтому мне удалось<br>
-                        воспользоваться финансовой программой<br>
-                        и открыть 2 пункта выдачи с разницей<br>
-                        в пару месяцев. Надеюсь на дальнейшее<br>
-                        развитие и очень рад быть частью<br>
-                        большой семьи Ozon».
-                    </p>
-                    </span>
-                </div>
-            </div>
-        </section>
-
     </main>
 
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script type="text/javascript" src="js/lightcase.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/app.js"></script>
+
 </body>
 
 </html>
