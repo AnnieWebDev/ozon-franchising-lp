@@ -17,7 +17,7 @@
             width: rem_calc(113px);
             height: rem_calc(48px);
 
-            @include breakpoint(large) {}
+
         }
     }
 
@@ -29,12 +29,19 @@
             justify-content: space-between;
             margin: 0;
 
+
         }
 
         &-item {
             list-style-type: none;
             position: relative;
             padding: rem_calc(10px 0);
+
+            @include breakpoint(medium only) {
+                padding: rem_calc(0 17px);
+                text-align: center;
+                line-height: rem_calc(18px);
+            }
 
             .icon {
                 transform: rotate(0);
@@ -48,6 +55,16 @@
 
         &-link {
             color: #001A34;
+
+            @include breakpoint (medium only) {
+                letter-spacing: 0.5px;
+                font-weight: 400;
+
+                span {
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+            }
 
         }
 

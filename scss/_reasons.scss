@@ -6,6 +6,11 @@
         margin-top: rem_calc(75px);
         letter-spacing: rem_calc(0.8px);
         margin-bottom: 0;
+
+        @include breakpoint (medium only) {
+            margin-top: rem_calc(60px);
+            padding-bottom: rem_calc(50px);
+        }
     }
 
     &__container {
@@ -24,9 +29,16 @@
         color: #33475C;
         padding: rem_calc(32px 24px);
 
+        @include breakpoint (medium only) {
+            @include xy-cell(3);
+        }
 
         &:first-child {
             @include xy-cell-offset(1, $breakpoint: auto);
+
+            @include breakpoint (medium only) {
+                @include xy-cell-offset(0);
+            }
         }
 
     }

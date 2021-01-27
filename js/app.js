@@ -1,6 +1,10 @@
 $(document).foundation();
 document.addEventListener("DOMContentLoaded", () => {
 
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 991px)');
+    let tablet = window.matchMedia('(min-width: 992px) and (max-width: 1471px)');
+    let desktop = window.matchMedia('(min-width: 1472px)');
+
     $('.phone-mask').inputmask("+7 (999) 999-99-99", { showMaskOnHover: false });
     $(".email-mask").inputmask("email", { showMaskOnHover: false });
 
@@ -13,20 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    const sliders = $(".swiper-slider");
-    sliders.each(function () {
-        new Swiper($('.swiper-container', this)[0], {
-            direction: 'horizontal',
-            loop: true,
-            navigation: {
-                nextEl: $('.swiper-slider__arrow_right', this)[0],
-                prevEl: $('.swiper-slider__arrow_left', this)[0]
-            },
-            slidesPerView: 5,
-            spaceBetween: 24
 
-        });
-    });
+
 
     $('a[data-rel^=lightcase]').lightcase();
 
@@ -161,6 +153,78 @@ document.addEventListener("DOMContentLoaded", () => {
         $(this).siblings('.form__placeholder').removeClass('form__placeholder_focus');
     });
 
+
+    /* Support slider
+    **************************************************************/
+
+    const supportSlider = $(".support__slider");
+
+    new Swiper($('.swiper-container', supportSlider)[0], {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: $('.swiper-slider__arrow_right', supportSlider)[0],
+            prevEl: $('.swiper-slider__arrow_left', supportSlider)[0]
+        },
+        slidesPerView: 5,
+        spaceBetween: 24
+
+    });
+
+    /* Reasons slider
+    **************************************************************/
+    var reasonSwiper = Swiper;
+    var reasonSwiperInit = false;
+    const reasonsSlider = $(".reasons__slider");
+
+    function reasonsSwiperMode() {
+
+        if (mobile.matches && reasonSwiperInit) {
+            reasonSwiper.destroy();
+            reasonSwiperInit = false;
+            console.log('mobile');
+
+        }
+
+        // Disable (for tablet)
+        else if (tablet.matches && !reasonSwiperInit) {
+
+            reasonSwiperInit = true;
+
+            reasonSwiper = new Swiper($('.swiper-container', reasonsSlider)[0], {
+                direction: 'horizontal',
+                loop: true,
+                navigation: {
+                    nextEl: $('.swiper-slider__arrow_right', reasonsSlider)[0],
+                    prevEl: $('.swiper-slider__arrow_left', reasonsSlider)[0]
+                },
+                slidesPerView: 4,
+                spaceBetween: 24,
+
+
+            });
+
+            console.log('tablet');
+        }
+
+        // Disable (for desktop)
+        else if (desktop.matches && reasonSwiperInit) {
+            reasonSwiper.destroy();
+            reasonSwiperInit = false;
+
+            console.log('desktop');
+        }
+
+    }
+
+    window.addEventListener('load', function () {
+        reasonsSwiperMode();
+    });
+
+
+    window.addEventListener('resize', function () {
+        reasonsSwiperMode();
+    });
 
 
 

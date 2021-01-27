@@ -72,8 +72,20 @@
 html {
     font-size: 1.08696vw;
 
+    @include breakpoint(medium) {
+        font-size: 1.61vw;
+    }
+
     @include breakpoint(large) {
         font-size: 16px;
+    }
+}
+
+.medium-only {
+    display: none;
+
+    @include breakpoint(medium only) {
+        display: block;
     }
 }
 
@@ -87,6 +99,10 @@ html {
     width: rem_calc(1200px);
     margin: 0 auto;
 
+    @include breakpoint (medium only) {
+        width: initial;
+    }
+
     &__item {
         @include xy-cell(4, $breakpoint: auto);
         border: 1px solid #E9EEF1;
@@ -96,6 +112,9 @@ html {
         padding: rem_calc(32px 24px 40px);
         margin-bottom: rem_calc(41px);
 
+        @include breakpoint (medium only) {
+            margin-bottom: rem_calc(33px);
+        }
 
 
     }
@@ -115,6 +134,11 @@ html {
         line-height: rem_calc(26px);
         letter-spacing: rem_calc(0.6px);
 
+        @include breakpoint (medium only) {
+            font-size: rem_calc(18px);
+            line-height: rem_calc(22px);
+
+        }
 
     }
 
@@ -124,6 +148,12 @@ html {
         line-height: rem_calc(26px);
         letter-spacing: rem_calc(0.4px);
         color: #33475C;
+
+        @include breakpoint (medium only) {
+            br {
+                display: none;
+            }
+        }
 
     }
 
@@ -480,6 +510,41 @@ html {
 
 .select2-container--open .select2-selection__arrow {
     transform: rotate(180deg);
+}
+
+.select2-results__option[aria-selected] {
+    border: 1px solid #E9EEF1;
+    padding: rem_calc(12px 20px);
+    font-family: GT Eesti Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem_calc(16px);
+    line-height: rem_calc(24px);
+    letter-spacing: rem_calc(0.7px);
+    box-sizing: border-box;
+
+
+
+}
+
+.select2-dropdown {
+    border-radius: rem_calc(6px);
+    overflow: hidden;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: white;
+
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: #E0EBFF;
+    color: #001A34;
+
+    &:active {
+        background: #7FADFF;
+
+    }
 }
 
 @import 'header';

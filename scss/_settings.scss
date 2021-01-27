@@ -155,7 +155,14 @@ $header-styles: (small: ('h1': ('font-size': 24),
         'h5': ('font-size': 17),
         'h6': ('font-size': 16),
     ),
-    medium: ('h1': ('font-size': 48),
+    medium: ('h1': ('font-size': 46),
+        'h2': ('font-size': 36),
+        'h3': ('font-size': 30),
+        'h4': ('font-size': 25),
+        'h5': ('font-size': 20),
+        'h6': ('font-size': 16),
+    ),
+    large: ('h1': ('font-size': 48),
         'h2': ('font-size': 46),
         'h3': ('font-size': 36),
         'h4': ('font-size': 30),
@@ -863,6 +870,7 @@ $grid-margin-gutters: (small: 16px,
     large: 24px);
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: (small: 16px,
-    medium: 32px);
+    medium: 32px,
+    large: 32px);
 $grid-container-max: 1472px;
 $xy-block-grid-max: 8;

@@ -4,24 +4,48 @@
     min-height: rem_calc(708px);
     background-position: center right;
     background-repeat: no-repeat;
-    margin-right: 11px;
+    margin-right: rem_calc(11px);
+
+    @include breakpoint (medium only) {
+        min-height: rem_calc(600px);
+        background-position: rem_calc(-64px -7px);
+        background-size: rem_calc(1133px);
+    }
 
     &__content {
         @include xy-cell(6, $breakpoint: auto);
         @include xy-cell-offset(1, $breakpoint: auto);
         padding-top: rem_calc(165px);
+
+        @include breakpoint(medium only) {
+            @include xy-cell(7, $breakpoint: auto);
+            @include xy-cell-offset(0);
+            padding-top: rem_calc(109px);
+
+        }
     }
 
     &__title {
         line-height: rem_calc(54px);
         margin-bottom: rem_calc(24px);
         letter-spacing: rem_calc(0.8px);
+
+        @include breakpoint(medium only) {
+            margin-bottom: rem_calc(32px);
+            line-height: rem_calc(42px);
+        }
     }
 
     &__text {
         font-size: rem_calc(24px);
         line-height: rem_calc(32px);
         letter-spacing: rem_calc(0.6px);
+
+        @include breakpoint (medium only) {
+            font-size: rem_calc(18px);
+            line-height: rem_calc(26px);
+            letter-spacing: rem_calc(0.4px);
+        }
     }
 
     &__btn {
