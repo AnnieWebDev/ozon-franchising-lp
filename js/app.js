@@ -172,59 +172,92 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /* Reasons slider
-    **************************************************************/
-    var reasonSwiper = Swiper;
-    var reasonSwiperInit = false;
+    // **************************************************************/
+
     const reasonsSlider = $(".reasons__slider");
 
-    function reasonsSwiperMode() {
+    new Swiper($('.swiper-container', reasonsSlider)[0], {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: $('.swiper-slider__arrow_right', reasonsSlider)[0],
+            prevEl: $('.swiper-slider__arrow_left', reasonsSlider)[0]
+        },
 
-        if (mobile.matches && reasonSwiperInit) {
-            reasonSwiper.destroy();
-            reasonSwiperInit = false;
-            console.log('mobile');
-
-        }
-
-        // Disable (for tablet)
-        else if (tablet.matches && !reasonSwiperInit) {
-
-            reasonSwiperInit = true;
-
-            reasonSwiper = new Swiper($('.swiper-container', reasonsSlider)[0], {
-                direction: 'horizontal',
-                loop: true,
-                navigation: {
-                    nextEl: $('.swiper-slider__arrow_right', reasonsSlider)[0],
-                    prevEl: $('.swiper-slider__arrow_left', reasonsSlider)[0]
-                },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                allowTouchMove: true
+            },
+            // when window width is >= 480px
+            992: {
                 slidesPerView: 4,
+                spaceBetween: 30,
+                allowTouchMove: true
+            },
+            // when window width is >= 640px
+            1472: {
+                slidesPerView: 5,
                 spaceBetween: 24,
-
-
-            });
-
-            console.log('tablet');
+                allowTouchMove: false
+            }
         }
 
-        // Disable (for desktop)
-        else if (desktop.matches && reasonSwiperInit) {
-            reasonSwiper.destroy();
-            reasonSwiperInit = false;
-
-            console.log('desktop');
-        }
-
-    }
-
-    window.addEventListener('load', function () {
-        reasonsSwiperMode();
     });
+    // var reasonSwiper = Swiper;
+    // var reasonSwiperInit = false;
+    // const reasonsSlider = $(".reasons__slider");
+
+    // function reasonsSwiperMode() {
+
+    //     if (mobile.matches && reasonSwiperInit) {
+    //         reasonSwiper.destroy();
+    //         reasonSwiperInit = false;
+    //         console.log('mobile');
+
+    //     }
+
+    //     // Disable (for tablet)
+    //     else if (tablet.matches && !reasonSwiperInit) {
+
+    //         reasonSwiperInit = true;
+
+    //         reasonSwiper = new Swiper($('.swiper-container', reasonsSlider)[0], {
+    //             direction: 'horizontal',
+    //             loop: true,
+    //             navigation: {
+    //                 nextEl: $('.swiper-slider__arrow_right', reasonsSlider)[0],
+    //                 prevEl: $('.swiper-slider__arrow_left', reasonsSlider)[0]
+    //             },
+    //             slidesPerView: 4,
+    //             spaceBetween: 24,
 
 
-    window.addEventListener('resize', function () {
-        reasonsSwiperMode();
-    });
+    //         });
+
+    //         console.log('tablet');
+    //     }
+
+    //     // Disable (for desktop)
+    //     else if (desktop.matches && reasonSwiperInit) {
+    //         reasonSwiper.destroy();
+    //         reasonSwiperInit = false;
+
+    //         console.log('desktop');
+    //     }
+
+    // }
+
+    // window.addEventListener('load', function () {
+    //     reasonsSwiperMode();
+    // });
+
+
+    // window.addEventListener('resize', function () {
+    //     reasonsSwiperMode();
+    // });
 
 
 

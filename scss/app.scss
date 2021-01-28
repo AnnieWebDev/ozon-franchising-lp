@@ -89,6 +89,14 @@ html {
     }
 }
 
+.desktop-only {
+    display: none;
+
+    @include breakpoint(large only) {
+        display: block;
+    }
+}
+
 .main__wrapper {
     @include xy-grid-container();
 }
@@ -383,6 +391,11 @@ html {
             background-image: url('../img/icons/arrowRight2.svg');
         }
     }
+}
+
+.swiper-container {
+    padding: rem_calc(10px);
+    box-sizing: border-box;
 }
 
 .form {

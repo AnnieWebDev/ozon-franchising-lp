@@ -9,16 +9,25 @@
 
         @include breakpoint (medium only) {
             margin-top: rem_calc(60px);
-            padding-bottom: rem_calc(50px);
+            padding-bottom: rem_calc(40px);
         }
     }
 
-    &__container {
-        @include xy-grid;
+    &__slider {
+        width: rem_calc(1176px);
+        margin: 0 auto;
+
+        @include breakpoint (medium only) {
+            width: 100%;
+        }
+    }
+
+    &__slider-arrow {
+        display: none;
     }
 
     &__card {
-        @include xy-cell(2, $breakpoint: auto);
+
 
         border: 1px solid #E9EEF1;
         box-sizing: border-box;
@@ -28,27 +37,22 @@
         letter-spacing: rem_calc(0.4px);
         color: #33475C;
         padding: rem_calc(32px 24px);
+        min-height: rem_calc(290px);
 
-        @include breakpoint (medium only) {
-            @include xy-cell(3);
-        }
 
-        &:first-child {
-            @include xy-cell-offset(1, $breakpoint: auto);
+    }
 
-            @include breakpoint (medium only) {
-                @include xy-cell-offset(0);
-            }
-        }
+    &__card-title {
+        @include breakpoint (medium only) {}
+
+        font-size: rem_calc(46px);
 
     }
 
     &__card-text {
         line-height: rem_calc(26px);
+        margin-bottom: 0;
 
     }
-
-
-
 
 }

@@ -2,17 +2,29 @@
     padding-top: rem_calc(120px);
     padding-bottom: rem_calc(80px);
 
+    @include breakpoint (medium only) {
+        padding-top: rem_calc(77px);
+    }
+
 
     &__title {
         text-align: center;
         letter-spacing: 0.8px;
         margin-bottom: rem_calc(75px);
+
+        @include breakpoint (medium only) {
+            margin-bottom: rem_calc(32px);
+        }
     }
 
     &__tabs {
         display: flex;
         justify-content: center;
         list-style-type: none;
+
+        @include breakpoint (medium only) {
+            margin-left: 0;
+        }
     }
 
     &__tabs-title {
@@ -30,6 +42,13 @@
             border-bottom: 4px solid#DEE5EA;
             padding-bottom: rem_calc(12px);
 
+            @include breakpoint (medium only) {
+                font-size: rem_calc(24px);
+                line-height: rem_calc(28px);
+                letter-spacing: rem_calc(0.6px);
+                padding-bottom: rem_calc(8px);
+                min-width: rem-calc(376px);
+            }
         }
 
         &.is-active a {
@@ -43,6 +62,11 @@
         width: rem_calc(1200px);
         margin: 0 auto;
         padding-top: rem_calc(89px);
+
+        @include breakpoint (medium only) {
+            padding-top: rem_calc(104px);
+            width: 100%;
+        }
     }
 
     &__tabs-panel {
@@ -56,10 +80,20 @@
     &__gallery {
         width: rem_calc(1176px);
         margin: 0 auto;
+
+        @include breakpoint (medium only) {
+            margin-top: rem_calc(38px);
+        }
     }
 
     &__gallery-title {
         margin-bottom: rem_calc(40px);
+
+        @include breakpoint (medium only) {
+            font-size: rem_calc(20px);
+            line-height: rem_calc(26px);
+            letter-spacing: rem_calc(0.6px);
+        }
     }
 
     &__gallery-inner {
@@ -85,16 +119,28 @@
     &__top-container {
         @include xy-grid;
         margin-bottom: rem_calc(92px);
+
+        @include breakpoint (medium only) {
+            margin-bottom: rem_calc(60px);
+        }
     }
 
     &__left {
         @include xy-cell(8, $breakpoint: auto);
         z-index: 1;
+
+        @include breakpoint (medium only) {
+            @include xy-cell(7);
+        }
     }
 
     &__right {
         @include xy-cell(4, $breakpoint: auto);
         z-index: 0;
+
+        @include breakpoint (medium only) {
+            @include xy-cell(5);
+        }
     }
 
     &__title {
@@ -107,10 +153,25 @@
         color: #000000;
         margin-bottom: rem_calc(20px);
 
+        @include breakpoint (medium only) {
+            font-size: rem_calc(22px);
+            line-height: rem_calc(26px);
+            letter-spacing: rem_calc(0.6px);
+            margin-bottom: rem_calc(27px);
+        }
+
         &_small {
             font-size: rem_calc(24px);
             line-height: rem_calc(28px);
             margin-bottom: rem_calc(20px);
+
+            @include breakpoint (medium only) {
+                font-size: rem_calc(22px);
+                line-height: rem_calc(26px);
+                letter-spacing: rem_calc(0.6px);
+
+            }
+
         }
     }
 
@@ -120,13 +181,19 @@
         letter-spacing: 0.857143px;
         color: #000000;
 
+        @include breakpoint (medium only) {
+            font-size: rem_calc(16px);
+            line-height: rem_calc(22px);
+            letter-spacing: rem_calc(0.4px);
+        }
+
     }
 
     &__img {
         margin-top: rem_calc(20px);
         width: rem_calc(420px);
         max-width: initial;
-        margin-left: rem_calc(-37p)x;
+        margin-left: rem_calc(-37px);
 
     }
 
@@ -141,6 +208,12 @@
     &__column-title {
         margin-bottom: rem_calc(40px);
         letter-spacing: 0.6px;
+
+        @include breakpoint (medium only) {
+            font-size: rem_calc(18px);
+            line-height: rem_calc(22px);
+            letter-spacing: rem_calc(0.6px);
+        }
 
     }
 
@@ -170,6 +243,13 @@
         font-size: rem_calc(20px);
         line-height: rem_calc(28px);
         letter-spacing: 0.4px;
+
+        @include breakpoint (medium only) {
+            font-size: rem_calc(16px);
+            line-height: rem_calc(22px);
+            letter-spacing: rem_calc(0.4px);
+            margin-bottom: rem_calc(27px);
+        }
     }
 
 
@@ -184,10 +264,18 @@
     border-radius: rem_calc(16px);
     margin-bottom: rem_calc(25px);
 
+    @include breakpoint (medium only) {
+        padding: rem_calc(47px 40px);
+    }
+
     &_blue {
         box-shadow: none;
         border: none;
         background: #E5F5FF;
+
+        @include breakpoint (medium only) {
+            padding: rem_calc(40px);
+        }
     }
 
     &__title {
@@ -205,6 +293,12 @@
         font-family: "GT Eesti Pro Display";
         font-weight: 500;
         margin-bottom: rem_calc(8px);
+
+        @include breakpoint (medium only) {
+            font-size: rem_calc(18px);
+            line-height: rem_calc(22px);
+            letter-spacing: rem_calc(0.6px);
+        }
 
         &:last-child {
             margin-bottom: 0;
